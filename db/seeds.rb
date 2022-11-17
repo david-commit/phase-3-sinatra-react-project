@@ -1,5 +1,51 @@
-puts "🌱 Seeding spices..."
+puts "🌱 Seeding data..."
 
-# Seed your database here
+User.create(first_name: "FN User1", last_name: "LN User1", email: "user1@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 5)
+User.create(first_name: "FN User2", last_name: "LN User2", email: "user2@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 4)
+User.create(first_name: "FN User3", last_name: "LN User3", email: "user3@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 3)
+User.create(first_name: "FN User4", last_name: "LN User4", email: "user4@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 2)
+User.create(first_name: "FN User5", last_name: "LN User5", email: "user5@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 1)
+User.create(first_name: "FN User6", last_name: "LN User6", email: "user6@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 2)
+User.create(first_name: "FN User7", last_name: "LN User7", email: "user7@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 3)
+User.create(first_name: "FN User8", last_name: "LN User8", email: "user8@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 4)
+User.create(first_name: "FN User9", last_name: "LN User9", email: "user9@google.com", password: "qwertyu", confirm_password: "qwertyu", trainer_id: 5)
 
-puts "✅ Done seeding!"
+Trainer.create(name: "Norman Victor", job_title: "Team Leader/Senior Consultant", facebook: "https://www.facebook.com/", twitter: "https://www.twitter.com/", linkedin: "https://www.linkedin.com/", pintrest: "https://www.pintrest.com/", image: "https://i.postimg.cc/5yQn5h3v/trainer-1.jpg", description: "Norman has been associated with fitness for more than two decades today, A highly experienced, innovative and intelligent operator, Maurice went on to manage at Bodywise Fitness Centre in the mid 1990s, later starting and developing the fitness for life programme, which was highly successful and acclaimed. Maurice is the lead instructor and team leader at Zarnash, from inception to date.")
+Trainer.create(name: "Elva Pili", job_title: "Senior Trainer", facebook: "https://www.facebook.com/", twitter: "https://www.twitter.com/", linkedin: "https://www.linkedin.com/", pintrest: "https://www.pintrest.com/", image: "https://i.postimg.cc/zXK186rV/trainer-2.jpg", description: "Elva Pill has been associated with fitness for more than two decades today, A highly experienced, innovative and intelligent operator, Maurice went on to manage at Bodywise Fitness Centre in the mid 1990s, later starting and developing the fitness for life programme, which was highly successful and acclaimed. Maurice is the lead instructor and team leader at Zarnash, from inception to date.")
+Trainer.create(name: "Gert Maxim", job_title: "Trainer", facebook: "https://www.facebook.com/", twitter: "https://www.twitter.com/", linkedin: "https://www.linkedin.com/", pintrest: "https://www.pintrest.com/", image: "https://i.postimg.cc/BZd0WsRr/trainer-3.jpg", description: "Gert Maxim has been associated with fitness for more than two decades today, A highly experienced, innovative and intelligent operator, Maurice went on to manage at Bodywise Fitness Centre in the mid 1990s, later starting and developing the fitness for life programme, which was highly successful and acclaimed. Maurice is the lead instructor and team leader at Zarnash, from inception to date.")
+Trainer.create(name: "Başak Alícia", job_title: "Trainer", facebook: "https://www.facebook.com/", twitter: "https://www.twitter.com/", linkedin: "https://www.linkedin.com/", pintrest: "https://www.pintrest.com/", image: "https://i.postimg.cc/XNZbDX1K/trainer-4.jpg", description: "Başak Alícia has been associated with fitness for more than two decades today, A highly experienced, innovative and intelligent operator, Maurice went on to manage at Bodywise Fitness Centre in the mid 1990s, later starting and developing the fitness for life programme, which was highly successful and acclaimed. Maurice is the lead instructor and team leader at Zarnash, from inception to date.")
+Trainer.create(name: "Berthild Josephine", job_title: "Associate Trainer", facebook: "https://www.facebook.com/", twitter: "https://www.twitter.com/", linkedin: "https://www.linkedin.com/", pintrest: "https://www.pintrest.com/", image: "https://i.postimg.cc/GtpTG7Bv/trainer-5.jpg", description: "Berthild Josephine has been associated with fitness for more than two decades today, A highly experienced, innovative and intelligent operator, Maurice went on to manage at Bodywise Fitness Centre in the mid 1990s, later starting and developing the fitness for life programme, which was highly successful and acclaimed. Maurice is the lead instructor and team leader at Zarnash, from inception to date.")
+
+Review.create(user_id: 1, review: "Review for user 1 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 9)
+Review.create(user_id: 2, review: "Review for user 2 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 8)
+Review.create(user_id: 3, review: "Review for user 3 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 7)
+Review.create(user_id: 4, review: "Review for user 4 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 10)
+Review.create(user_id: 5, review: "Review for user 5 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 9)
+Review.create(user_id: 6, review: "Review for user 6 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 6)
+Review.create(user_id: 7, review: "Review for user 7 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 5)
+Review.create(user_id: 8, review: "Review for user 8 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 4)
+Review.create(user_id: 9, review: "Review for user 9 > Lorem ipsum dolor sit amet consectetur adipisicing elit.", rating: 5)
+Review.create(user_id: 9, review: "Review for user 99 > Lorem ipsum dolor sit amet consectetur adipisicng elit.", rating: 8)
+Review.create(user_id: 9, review: "Review for user 999 > Lorem ipsum dolor sit amet consectetur adipicing elit.", rating: 9)
+Review.create(user_id: 1, review: "Review for user 11 > Lorem ipsum dolor sit amet consectetur adipisiing elit.", rating: 10)
+Review.create(user_id: 1, review: "Review for user 111 > Lorem ipsum dolor sit amet consectetur adipicing elit.", rating: 7)
+
+Appointment.create(user_id: 1, workout: "Zumba", date: "9/11/22", duration: "2 hours", trainer_id: 1)
+Appointment.create(user_id: 2, workout: "Bike riding", date: "4/11/22", duration: "1 hours", trainer_id: 5)
+Appointment.create(user_id: 3, workout: "Press ups", date: "4/11/22", duration: "2 hours", trainer_id: 4)
+Appointment.create(user_id: 4, workout: "Aerobics", date: "4/11/22", duration: "1 hours", trainer_id: 3)
+Appointment.create(user_id: 5, workout: "Self defece", date: "4/11/22", duration: "3 hours", trainer_id: 2)
+Appointment.create(user_id: 6, workout: "Jumping jacks", date: "4/11/22", duration: "4 hours", trainer_id: 2)
+Appointment.create(user_id: 7, workout: "Wall Sits", date: "4/11/22", duration: "3 hours", trainer_id: 1)
+Appointment.create(user_id: 8, workout: "Crunches", date: "4/11/22", duration: "6 hours", trainer_id: 4)
+Appointment.create(user_id: 9, workout: "Step-up onto chair, alternating legs", date: "4/11/22", duration: "3 hours", trainer_id: 5)
+Appointment.create(user_id: 9, workout: "Squats", date: "4/11/22", duration: "1 hours", trainer_id: 2)
+Appointment.create(user_id: 8, workout: "Triceps dips, using a chair or bench", date: "4/11/22", duration: "2 hours", trainer_id: 3)
+Appointment.create(user_id: 2, workout: "Bike riding, press ups", date: "4/11/22", duration: "2 hours", trainer_id: 5)
+Appointment.create(user_id: 1, workout: "Forearm plank", date: "4/11/22", duration: "5 hours", trainer_id: 3)
+Appointment.create(user_id: 1, workout: "Bike riding, press ups", date: "4/11/22", duration: "1 hours", trainer_id: 2)
+Appointment.create(user_id: 4, workout: "Balance and Stability Training", date: "4/11/22", duration: "4 hours", trainer_id: 1)
+
+Feedback.create(name: "John Doe", email: "email@email.com", phone: "+2445679877", message: "As their default model text, and a search for (injected humour and the like).")
+
+puts "🌱 Done seeding!"
